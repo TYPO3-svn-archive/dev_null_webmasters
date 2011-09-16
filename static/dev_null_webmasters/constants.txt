@@ -1,0 +1,8 @@
+# dev/null webmasters 
+# authentication files
+
+config.devnullwebmasters {
+
+	# cat=dev-null-webmasters: expert/10; type=string; label=page.typeNum for webmaster files
+	typeNum = 1966
+}

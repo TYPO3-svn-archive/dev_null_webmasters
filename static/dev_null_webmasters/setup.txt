@@ -1,0 +1,23 @@
+# dev/null webmasters 
+# authentication files
+
+# fix to switch of source code optimization
+# you have to ensure dev_null_robots ist loaded after sourceopt
+
+[globalVar = GP:type = {$config.devnullwebmasters.typeNum}]
+config.sourceopt.enabled = 0
+[global]
+
+includeLibs.tx_devnullwebmasters = EXT:dev_null_webmasters/class.tx_devnullwebmasters.php
+tx_devnull_webmasters = PAGE
+tx_devnull_webmasters {
+	typeNum = {$config.devnullwebmasters.typeNum}
+	10 = USER
+	10 {
+		userFunc = tx_devnullwebmasters->main
+	}
+	config {
+		disableAllHeaderCode = 1
+		admPanel             = 0
+	}
+}

@@ -1,0 +1,19 @@
+# dev/null webmasters basic setup
+
+config {
+	devnullwebmasters {
+		google {
+			contentType = text/html
+			metaName = google-site-verification
+		}
+		yahoo {
+			contentType = text/html
+			metaName = y_key
+		}
+		bing {
+			contentType = text/xml
+			metaName = msvalidate.01
+		}
+	}
+}
+

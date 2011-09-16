@@ -1,0 +1,2 @@
+# cat=basic/meta/010; type=boolean; label= Add meta tags for webmaster tools authentication
+metaValidation = 0
